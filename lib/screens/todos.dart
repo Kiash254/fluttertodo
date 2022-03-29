@@ -28,25 +28,22 @@ class _TodoscreenState extends State<Todoscreen> {
           TextField(
             controller: TodoName,
             decoration: const InputDecoration(
-                hintText: 'Name', 
-                labelText: 'Write Todo Name'),
+                hintText: 'Name', labelText: 'Write Todo Name'),
           ),
           TextField(
             controller: TodoDescription,
             decoration: const InputDecoration(
-                hintText: 'Description', 
-                labelText: 'Write Todo Description'),
+                hintText: 'Description', labelText: 'Write Todo Description'),
           ),
           TextField(
             controller: TodoDate,
-            decoration:
-                const InputDecoration(hintText: 'Date', 
+            decoration: const InputDecoration(
+                hintText: 'Date',
                 labelText: 'Write Todo Date',
-                prefixIcon:InkWell(
-                 onTap: child: Icon(Icons.calendar_today),
-
-                )
-                ),
+                prefixIcon: InkWell(
+                  //  onTap:  ,
+                  child: Icon(Icons.calendar_today),
+                )),
           ),
         ],
       ),
